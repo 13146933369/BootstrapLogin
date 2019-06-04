@@ -1,0 +1,47 @@
+@media (max-width:1440px){
+
+}
+@media (max-width:1366px){
+
+}
+@media (max-width:1280px){
+
+}
+@media (max-width:1024px){
+
+}
+@media (max-width:768px){
+
+}
+@media (max-width:640px){
+
+}
+@media (max-width:480px){
+
+}
+@media (max-width:320px){
+
+
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+.loginBg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:#02071B
+}
+.loginBox{
+    position: relative;
+    width: 30%;
+    margin: 3% auto 0 auto;
+    border: 1px solid red;
+    height: 500px;
+    border-radius:5%;
+}
