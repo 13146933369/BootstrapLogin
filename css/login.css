@@ -1,25 +1,36 @@
+html{
+    font-size:62.5%;!important
+}
 /*媒体查询：注意and后面空格的添加*/
 /*iphone: w < 768px*/
 @media screen and (max-width: 768px){
-    .container{
-        width:100%;
+    .loginBox{
+        width:90%;
         background-color: green;
     }
 }
 /*pad: w >= 768  && w< 992*/
 @media screen and (max-width: 992px) and (min-width: 768px) {
-    .container{
-        width:750px;
+    .loginBox{
+        width:90%;
         background-color: blue;
     }
 }
 /*中等屏幕   w >= 992  && w<1200*/
 @media screen and (max-width: 1200px) and (min-width: 992px) {
-    .container{
-        width:970px;
-        background-color: pink;
+    .loginBox{
+        width:30%;
+        background-color:yellow;
     }
 }
+@media screen and (min-width: 1200px) {
+    .loginBox{
+        width:20%;
+        background-color:#fff;
+    }
+}
+
+
 body{
     width: 100%;
     height: 100%;
@@ -36,9 +47,23 @@ html{
 }
 .loginBox{
     position: relative;
-    width: 30%;
     margin: 3% auto 0 auto;
     border: 1px solid red;
     height: 500px;
     border-radius:5%;
+}
+.loginHead{
+    width:95%;
+    height:3rem;
+    border: 1px solid red;
+    margin: 5% auto 0 auto;
+}
+.loginHead li{
+    float: left;
+    width: 40%;
+    height: 50px;
+    border:1px solid yellow;
+    margin-left:5%;
+    text-align: center;
+
 }
