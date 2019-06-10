@@ -3,66 +3,33 @@ $(function () {
     myCharpie();
     myCharba();
     $("#dataNums").rollNum({
-        deVal:88888
+        deVal:88889
     });
 
 })
 var sum = 13000;
-
-
 //折线图开始
 function myCharline(){
     var dom = document.getElementById("infoLineId");
     var myChart = echarts.init(dom);
-    // var app = {};
-    // option = null;
-    // option = {
-    //     xAxis: {
-    //         type: 'category',
-    //         boundaryGap: false,
-    //         data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-    //         axisLabel: {
-    //             show: true,
-    //             textStyle: {
-    //                 color: '#fff',  //更改坐标轴文字颜色
-    //                 fontSize : 14      //更改坐标轴文字大小
-    //             }
-    //         },
-    //         axisLine:{
-    //             lineStyle:{
-    //                 color:'#fff' //更改坐标轴颜色
-    //             }
-    //         }
-    //
-    //     },
-    //     yAxis: {
-    //         type: 'value',
-    //         xisLabel: {
-    //             show: true,
-    //             textStyle: {
-    //                 color: '#fff',  //更改坐标轴文字颜色
-    //                 fontSize : 14      //更改坐标轴文字大小
-    //             }
-    //         },
-    //         axisLine:{
-    //             lineStyle:{
-    //                 color:'#fff' //更改坐标轴颜色
-    //             }
-    //         }
-    //     },
-    //     series: [{
-    //         data: [820, 932, 901, 934, 1290, 1330, 1320],
-    //         type: 'line'
-    //     }]
-    // };
-    // ;
-    // if (option && typeof option === "object") {
-    //     myChart.setOption(option, true);
-    // }
-
     var app = {};
     option = null;
     option = {
+        title:{
+          text:"人数",
+          left:'40',
+          top:'30',
+            textStyle: {
+                fontWeight: 'normal',
+                color: '#fff',  //标题颜色
+                fontSize:'11'
+            },
+        },
+        tooltip: {
+            trigger: 'axis',
+            //在这里设置
+            formatter: '{c0}人'
+        },
         xAxis: {
             type: 'category',
             boundaryGap: false,
@@ -77,7 +44,7 @@ function myCharline(){
         },
         yAxis: {
             type: 'value',
-            xyisLabel: {
+            axisLabel: {
                 show: true,
                 textStyle: {
                     color: '#fff',  //更改坐标轴文字颜色
@@ -93,8 +60,20 @@ function myCharline(){
         series: [{
             data: [820, 932, 901, 934, 1290, 1330, 1320],
             type: 'line',
-            areaStyle: {}
-        }]
+            areaStyle: {
+                normal: {
+                    color: '#14646B' //改变区域颜色
+                }
+            },
+            itemStyle : {
+                normal: {
+                    color: '#8cd5c2', //改变折线点的颜色
+                    lineStyle: {
+                        color: '#19B7B5' //改变折线颜色
+                    }
+                }
+            }
+            }]
     };
     ;
     if (option && typeof option === "object") {

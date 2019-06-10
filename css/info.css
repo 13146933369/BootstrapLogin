@@ -51,7 +51,6 @@ html {
 .infoBox{
     height:100%;
     margin: 0 auto;
-    border:1px solid red;
 }
 .infoHead{
     width: 100%;
@@ -96,15 +95,9 @@ html {
 .infoContent{
     width: 100%;
 }
-.infoLine{
-    width:100%;
-    height:35rem;
-    border:1px solid yellow
-}
+
 .inforNumber{
-    width: 100%;
-    height: 35rem;
-    border: 1px solid blue;
+
 }
 .animateNum{
     color:#fff;
@@ -132,8 +125,8 @@ html {
 }
 .histogram{
     width: 100%;
-    height: 35rem;
-    border: 1px solid #34ce57;
+    height: 30rem;
+    border: 1px solid orange;
 }
 #charbar{
     width: 100%;
@@ -146,13 +139,37 @@ html {
     border: 1px solid #e4606d;
 }
 .infoFont{
-    font-size: 2.5rem;
+    font-size:1.8rem;
     color:#0DCC92;
     font-weight:bold;
     margin-left:1rem;
 }
 .infoNumber{
     color:#4C90AE;
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     font-weight: bold;
+}
+.contentLeft{
+    width:100%;
+    height:60rem;
+}
+.infoLine{
+    width:98%;
+    margin-left:1rem;
+    height:30rem;
+}
+.histogramBox{
+    width:100%;
+    height:30rem;
+}
+.contentCenter{
+    width: 100%;
+    height: 70rem;
+    border: 1px solid blue;
+}
+.infoLineBox{
+    background-color: #09132C;
+}
+.infoTtile{
+    padding-top:1.5rem;
 }
