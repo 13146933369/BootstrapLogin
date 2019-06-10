@@ -1,0 +1,158 @@
+html {
+    font-size: 10px !important;
+}
+/*媒体查询：注意and后面空格的添加*/
+/*iphone: w < 768px*/
+@media screen and (max-width: 768px) {
+    html {
+        font-size:3px;
+        background-color:#2B2B36;
+
+    }
+    .infoBox{
+        width:100%;
+        background-color:#2B2B36;
+    }
+}
+/*pad: w >= 768  && w< 992*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .infoBox{
+        width:90%;
+        background-color: blue;
+    }
+    html {
+        font-size: 8px !important;
+    }
+}
+/*中等屏幕   w >= 992  && w<1200*/
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .loginBox{
+        width:30%;
+        background-color:yellow;
+    }
+}
+@media screen and (min-width: 1200px) {
+    html{
+        background-color:#02071B;
+    }
+    .infoBox{
+        width:90%;
+
+    }
+
+}
+
+.infoBg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*background-color:#02071B*/
+}
+.infoBox{
+    height:100%;
+    margin: 0 auto;
+    border:1px solid red;
+}
+.infoHead{
+    width: 100%;
+    height:4rem;
+    background-color:#044493;
+    margin: 0 auto;
+}
+.infoHeadL{
+    float: left;
+    width:42%;
+    height:100%;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 1rem;
+}
+.infoHeadR{
+    float: right;
+    width:54%;
+    height:100%;
+}
+.infoHeadUser{
+    float:right;
+    color: #fff;
+    font-size:1.1rem;
+    margin-top:1.3rem;
+    margin-right:2rem;
+}
+.infoHeadUser span{
+    margin-left: 1rem;
+    color:red;
+    font-size:1.2rem;
+}
+.infoHeadQuit{
+    float: right;
+    color: #fff;
+    font-size:1rem;
+    margin-top:1.3rem;
+    margin-right: 1.5rem;
+}
+.infoContent{
+    width: 100%;
+}
+.infoLine{
+    width:100%;
+    height:35rem;
+    border:1px solid yellow
+}
+.inforNumber{
+    width: 100%;
+    height: 35rem;
+    border: 1px solid blue;
+}
+.animateNum{
+    color:#fff;
+    font-size: 3rem;
+}
+.number{
+    font-size: 3rem;
+    color:#fff;
+}
+.t_num i {
+    width: 33px;
+    height: 47px;
+    display: inline-block;
+    background: url(../img/number1.png) no-repeat;
+    background-position: 0 0;
+}
+.infotCharPie{
+    width: 100%;
+    height: 35rem;
+    border: 1px solid fuchsia;
+}
+#charpie{
+    width: 100%;
+    height:35rem;
+}
+.histogram{
+    width: 100%;
+    height: 35rem;
+    border: 1px solid #34ce57;
+}
+#charbar{
+    width: 100%;
+    height:35rem;
+
+}
+.ChinaMap{
+    width: 100%;
+    height: 35rem;
+    border: 1px solid #e4606d;
+}
+.infoFont{
+    font-size: 2.5rem;
+    color:#0DCC92;
+    font-weight:bold;
+    margin-left:1rem;
+}
+.infoNumber{
+    color:#4C90AE;
+    font-size: 2.8rem;
+    font-weight: bold;
+}

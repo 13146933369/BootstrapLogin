@@ -10,7 +10,7 @@ html {
     .loginBox{
         width:90%;
         height:53%;
-        background-color: green;
+        background-color:#2B2B36;
     }
 }
 @media screen and (max-height:568px) {
@@ -199,14 +199,16 @@ html{
 }
 .controlsTell .loginTellInput{
     width:68%;
+    height:2.9rem;
 }
 .controlsTell .loginVerify{
     width:30%;
-    height: 3rem;
-    border-radius:6%;
+    height:2.8rem;
+    background-color:#DDDDDD;
+    border-radius:4%;
     font-size:1.4rem;
-    margin-top: -0.5rem;
-    outline: none;
+    margin-top:0.3rem;
+    border:none;
 
 }
 .loginForm .showForm{
